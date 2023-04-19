@@ -1,7 +1,5 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import {Box,TextField,Button } from '@mui/material';
 import {useDispatch, useSelector} from "react-redux";
 import {changeValue, fetchAsyncMain} from "../../store/slices/mainSlice.js";
 

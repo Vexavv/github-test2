@@ -1,7 +1,5 @@
 import * as React from 'react';
-
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
+import {Box, Container}  from '@mui/material';
 import InputForm from "../../components/InputForm/InputForm";
 import BoardContent from "../../components/BoardContent/BoardContent.jsx";
 

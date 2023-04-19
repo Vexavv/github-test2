@@ -1,11 +1,10 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-function ContentRow({text,childComponent}) {
+import {Box, Typography} from '@mui/material';
+function ContentRow(props) {
     return (
         <Box component="div">
             <Typography variant="h6" sx={{textAlign:'center'}}>
-                {text}
+                {props.text}
             </Typography>
             <Box component="div" sx={{
                 border: '1px solid black',
@@ -14,11 +13,12 @@ function ContentRow({text,childComponent}) {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-around',
-                height: '300px',
-                width: '200px',
-                m: 1
+                m: 1,
+                p:3,
+                width: '300px',
+                minHeight: '500px',
             }}>
-                {childComponent}
+                {props.children}
             </Box>
 
         </Box>
